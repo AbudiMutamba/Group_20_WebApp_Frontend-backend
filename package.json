@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r http://AbudiMutamba.github.io/Group_20_Web_App",
+    "deploy": "gh-pages -d build -r https://github.com/AbudiMutamba/Group_20_Web_App/",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

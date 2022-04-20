@@ -24,7 +24,7 @@ export default function MyRouter() {
 
         <Router>
             <Routes>
-                <Route path='/' element= {<Home />} />
+                <Route path='/Group_20_Web_App/' element= {<Home />} />
                 <Route path='home' element= {<Home />} />
                 <Route path='weather' element= {<Weather/>} />
                 <Route path='contact' element= {<Contact/>} />

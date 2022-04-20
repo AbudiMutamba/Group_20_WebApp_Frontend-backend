@@ -50,17 +50,21 @@ export default function Weather() {
           
  
 
-            <div className = "grid grid-cols-1 md:grid-cols-3 m-20">
+            <div className = "grid grid-cols-1 md:grid-cols-3 m-20 rounded ">
     
-                 <div className="col-span-2 bg-gray-100">
-                    <img className='object-contain h-48 w-96 flex items-center md:object-scale-down py-5   ' src = {logo}  alt = "weather" />
+                 <div className='col-start-1 col-end-3' >
+        
+                    <div className='flex justify-center'>
+                        <img className='/* object-cover */ h-48 w-96 md:object-scale-down py-5 flex /* align-middle */' src = {logo}  alt = "weather" />
+                    </div>
+                    
         
                     <h1 className='text-xl flex justify-center uppercase'> Weather Predications</h1>
                     
                     <p className='text-xs flex justify-center '>Use this App to find out the current weather info of a location</p>
             
         
-                        <form className='flex justify-center ' action="#" method="post" onSubmit={ handleSubmit } >
+                        <form className='flex justify-center col-end-7 col-span-2' action="#" method="post" onSubmit={ handleSubmit } >
             
                             <input
                             

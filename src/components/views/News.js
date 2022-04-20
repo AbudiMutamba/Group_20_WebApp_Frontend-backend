@@ -25,11 +25,11 @@ function News() {
      
     return (      
         <>      
-            <div className='flex flex-wrap mb-8 flex-row tex'>
+            <div className='flex flex-wrap flex-row'>
                 {newsInfo && newsInfo.map((news, index) => <li className='list-none' key={index}>
-                     <div className=' flex flex-col p-3'>
+                     <div className=' flex p-4'>
                         {/* <div className='text-5x1 md:10'>{news.category}</div> */}
-                        {news.image && < img class=' w-fit md:max-w-xs md:max-h-full max-h-25 object-cover'src = {news.image?.thumbnail.contentUrl} alt = "newsimage"/>}<br/>
+                        {news.image && < img class=' w-fit md:max-w-xs md:max-h-full max-h-25 object-cover mr-2'src = {news.image?.thumbnail.contentUrl} alt = "newsimage"/>}<br/>
                         <div className='flex flex-row flex-wrap justify-start'>
                             <div className='text-2xl'>{news.name}</div>
                             <div className='text-sm'>{news.description}</div>

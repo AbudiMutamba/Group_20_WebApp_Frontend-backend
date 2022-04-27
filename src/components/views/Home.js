@@ -2,7 +2,7 @@ import React, {Suspense} from 'react';
 
 const News = React.lazy(() => import ('./News'));
 
-const International = React.lazy(() => import('./International'))
+// const International = React.lazy(() => import('./International'))
 
 
 

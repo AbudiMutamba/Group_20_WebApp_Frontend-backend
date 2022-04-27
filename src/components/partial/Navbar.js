@@ -4,9 +4,9 @@ import Buttons from '../partial/Buttons';
 
 export default function Navbar() {
     let Link =[
-        {name: "HOME", Link: "/"},
-        {name: "INTERNATIONAL NEWS", Link: "/international"},
-        {name: "WEATHER INFO", Link: "/weather"},
+        {name: "HOME", Link: "/#/"},
+        {name: "INTERNATIONAL NEWS", Link: "/#/international"},
+        {name: "WEATHER INFO", Link: "/#/weather"},
 
     ]
     let [open, setOpen] = useState(false);
@@ -32,7 +32,7 @@ export default function Navbar() {
                         ))
                    }
                    <Buttons>
-                    <a href='/Contact'>Subscribe</a>
+                    <a href='/#/Contact'>Subscribe</a>
                    </Buttons>
                 </ul>
                 

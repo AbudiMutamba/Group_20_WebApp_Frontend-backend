@@ -7,7 +7,8 @@ import Home from '../views/Home';
 import Weather from '../views/Weather';
 
 import {
-    BrowserRouter as Router,
+    // BrowserRouter as Router,
+    HashRouter as Router,
     Routes,
     Route,
   } from "react-router-dom";
@@ -24,7 +25,7 @@ export default function MyRouter() {
 
         <Router>
             <Routes>
-                <Route path='/Group_20_Web_App/' element= {<Home />} />
+                <Route path='/' element= {<Home />} />
                 <Route path='home' element= {<Home />} />
                 <Route path='weather' element= {<Weather/>} />
                 <Route path='contact' element= {<Contact/>} />

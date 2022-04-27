@@ -23,7 +23,7 @@ export default function MyRouter() {
         <>
         <Navbar />
 
-        <Router>
+        <Router basename='/'>
             <Routes>
                 <Route path='/' element= {<Home />} />
                 <Route path='home' element= {<Home />} />

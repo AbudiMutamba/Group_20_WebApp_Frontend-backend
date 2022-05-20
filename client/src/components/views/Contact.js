@@ -1,6 +1,7 @@
 import React from 'react';
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
+import getForm from '../helpers/fetchbackend'
 
 const MyTextInput = ({ label, ...props }) => {
   // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
@@ -84,10 +85,15 @@ const SignupForm = () => {
             .required('Required'),
         })}
         onSubmit={(values, { setSubmitting }) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-          }, 400);
+           const check = getForm(values);
+            check.then(data => {
+               if( data.status === 201){
+                 alert("Thank you")
+               } else {
+                 alert("Try again")
+               }
+              })
+
         }}
       >
         <Form className='m-20 flex-row   border-2 border-black-700'>
@@ -106,7 +112,7 @@ const SignupForm = () => {
             className='flex justify-center border-2 border-black-700'
           />
 
-          <MyTextInput
+          <MyTextInput required
             label="Email Address"
             name="email"
             type="email"
@@ -122,7 +128,7 @@ const SignupForm = () => {
             <option value="other">Other</option>
           </MySelect>
 
-          <MyCheckbox className="accent-pink-300 focus:accent-pink-500" name="acceptedTerms">
+          <MyCheckbox required className="accent-pink-300 focus:accent-pink-500" name="acceptedTerms">
             I accept the terms and conditions
           </MyCheckbox>
 

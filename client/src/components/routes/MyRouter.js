@@ -25,11 +25,11 @@ export default function MyRouter() {
 
         <Router basename='/'>
             <Routes>
-                <Route path='#/' element= {<Home />} />
-                <Route path='#/home' element= {<Home />} />
-                <Route path='#/weather' element= {<Weather/>} />
-                <Route path='#/contact' element= {<Contact/>} />
-                <Route path='#/international' element= {<International/>} />
+                <Route path='/' element= {<Home />} />
+                <Route path='/home' element= {<Home />} />
+                <Route path='/weather' element= {<Weather/>} />
+                <Route path='/contact' element= {<Contact/>} />
+                <Route path='/international' element= {<International/>} />
             </Routes>
         </Router>
 

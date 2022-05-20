@@ -1,0 +1,25 @@
+GET http://localhost:5001
+
+###
+GET http://localhost:5001/api/v1/form
+
+###
+POST http://localhost:5001/api/v1/form
+
+###
+POST http://localhost:5001/api/v1/form
+Content-Type: application/json
+
+{
+        "firstName": "Mark",
+        "lastName": "kaweesi",
+        "email": "kaweesimark@gmail.com",
+        "jobType": "entrepreneuar",
+        "acceptedTerms": true
+}
+
+###
+DELETE  http://localhost:5001/api/v1/form/123
+
+###
+DELETE http://localhost:5001/api/v1/form/62874768a00ec7518bc87485
